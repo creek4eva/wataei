@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>art</title>
+<link rel="stylesheet" href="art.css">
+<link rel="icon" type="image/x-icon" href="https://cutekawaiiresources.files.wordpress.com/2016/11/my-melody-bullet-81.gif?w=20&zoom=2">
+</head>
+<div class="pages"><img src="https://scemoboy.carrd.co/assets/images/gallery06/1ab5864d.png?v=5de7c328" class="first" onclick="openCity('art')"><p>draws</p>
+                                    <img src="https://scemoboy.carrd.co/assets/images/gallery06/dfc411da.png?v=5de7c328" class="book" onclick="openCity('sketch')"><p>kandi</p></div>
+                                    <div id="behind">
+</div>
+<div id="container">
+            <div id="flex">
+                <aside id="leftSidebar"><center>
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <div id = "ready" class="w3-container city">
+   <div class = "message"><b>note!!</b> no warnings so far woohoo :3</div>
+   <button class = "btn" onclick = "openCity('art');">ok</button>
+   </div>
+<div id="art" style="display:none;" class="w3-container city">
+                <div class="top" style="margin-top:5px">digital art</div>
+                    <div class="slideshow-container" style="top:0;">
+  <a class="prev" onclick="plusSlides(-1)" style="transform:rotate(180deg);margin-right:100px;">&#10140;</a>
+  <div class="mySlides fade">
+    <img src="https://scemoboy.carrd.co/assets/images/gallery07/d840c66b.jpg?v=9fe851fa" style="margin-left:30px">
+  </div>
+
+  <div class="mySlides fade">
+    <p>...</p>
+  </div>
+
+  <div class="mySlides fade">
+    <p>...</p>
+  </div>
+  <a class="next" onclick="plusSlides(1)">&#10140;</a>
+</div>
+<br>
+
+<center><div style="text-align:center;margin-right:15px;">
+  <span class="dot" onclick="currentSlide(1)" style="margin-right:15px;"></span>
+  <span class="dot" onclick="currentSlide(2)" style="margin-right:15px;"></span>
+  <span class="dot" onclick="currentSlide(3)" style="margin-right:15px;"></span>
+  </div></center>
+  <center>
+    <div class="top">sketches</div>
+<div id="sd"><div class="columnd"><img src="https://scemoboy.carrd.co/assets/images/gallery02/dc6b4b77.jpg?v=99ba6907" style="width:70%;"><p>my fav sketchbook pages :3</p></div><div class="columna" style="width:70%;float:right;"><p>wip</p></div></div></div>
+<div id="sketch" style="display:none;" class="w3-container city">
+<div class="eugh">
+  <div class="top" style="position:absolute;width:95.5%;margin-top:5px">kandi</div><br>
+<p>idk if kandi is considered art but these r my fav pieces of mine :3 hover for top views</p><br><br>
+<img src="https://scemoboy.carrd.co/assets/images/gallery07/a6a87884.jpg?v=8f381f17"> <img src="https://scemoboy.carrd.co/assets/images/gallery07/9c86a8bc.jpg?v=8f381f17"> <img src="https://scemoboy.carrd.co/assets/images/gallery07/d02ba236.jpg?v=8f381f17"> <img src="https://scemoboy.carrd.co/assets/images/gallery07/19cbeb0c.jpg?v=8f381f17"> <img src="https://scemoboy.carrd.co/assets/images/gallery07/3fa6ce70.jpg?v=8f381f17"> <img src="https://scemoboy.carrd.co/assets/images/gallery07/3631b6a0.jpg?v=8f381f17"> <img src="https://scemoboy.carrd.co/assets/images/gallery07/8bbd51be.jpg?v=8f381f17"></div>
+</div></center></aside>
+<main>
+  <div class="window"><div class="laa">...</div><center><div class="textarea"><img src="https://i.pinimg.com/originals/33/31/2a/33312aafa411fe70eba1c5735e11dabe.gif" style="width:50%;"></div>
+</div></center>
+  </main>
+</div>
+</div>
+<div class="mado"> </div>
+<div class="cat"> </div>
+<style>
+  .mado{
+  background-image:url(https://scemoboy.carrd.co/assets/images/gallery05/273706a6.png?v=a6cd4390);
+     position: fixed;
+     background-repeat:no-repeat;
+     background-size:100%;
+    left: 0px;
+    bottom: 3%;
+    height: 320px;
+    width: 250px;
+    z-index: 1000;
+    opacity: 100%;
+  }
+  .cat{
+      background-image:url(https://scemoboy.carrd.co/assets/images/gallery02/c4eb7fcb.gif?v=5fa6d953);
+position: fixed;
+     background-repeat:no-repeat;
+     background-size:120%;
+    right: 0;
+    bottom: 4%;
+    height: 220px;
+    width: 200px;
+    z-index: 1000;
+    opacity: 100%;
+}</style>
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+          
+   </script>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/anime/ani-10/ani946.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2009/05/15/death-the-kid-soul-eater-2.html" target="_blank" title="Death the Kid  - Soul Eater 2"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Death the Kid  - Soul Eater 2" style="position:absolute; top: 0px; right: 0px;" /></a>
